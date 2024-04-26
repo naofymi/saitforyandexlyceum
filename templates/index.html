@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя страница</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Приветственная страница</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Войти</a></li>
+                <li><a href="{{ url_for('register') }}">Зарегистрироваться</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Добро пожаловать на наш сайт!</p>
+        <p>Здесь вы можете зарегистрироваться или войти в систему.</p>
+    </main>
+</body>
+</html>
